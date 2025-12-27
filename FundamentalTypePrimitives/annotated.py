@@ -22,3 +22,16 @@ class LargeAnimals:
 capybara = LargeAnimals(name="Capybara", country_of_origin=("Colombia", "Panama"))
 print(capybara.name) #Capybara
 print(capybara.country_of_origin) #('Colombia', 'Panama')
+
+from pydantic import BaseModel, Field
+
+
+class CharlieBrownCharacters(BaseModel):
+    #name: str = Field(min_length=3)
+    name: Annotated[str, Field(min_length=3)]
+    age: Annotated[int, Field(gt=0, lt=100)]
+
+
+snoopy = CharlieBrownCharacters(name="snoopy", age=2)
+print(snoopy.name)
+print(snoopy.age)
