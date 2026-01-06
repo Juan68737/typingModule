@@ -1,7 +1,7 @@
 from typing import Union, Literal
-
 class Venmo:
-    def __init__(self, amount: Union[int, float]):
+    # def __init__(self, amount: Union[int, float]): Python 3.9 and ealier
+    def __init__(self, amount: int | float): # Python 3.10 and up
         self.total_amount = amount
     
     def action(
