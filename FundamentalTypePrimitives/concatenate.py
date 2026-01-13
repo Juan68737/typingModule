@@ -18,4 +18,6 @@ def sum_of_list(values: List[int]) -> int:
 Bruno is calling this function
 15
 '''
+
 print(sum_of_list("Bruno",[1, 2, 3, 4, 5]))    
+print(sum_of_list("Any name", [3,4,2,4,23,4,9]))
