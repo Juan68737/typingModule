@@ -21,3 +21,4 @@ Bruno is calling this function
 
 print(sum_of_list("Bruno",[1, 2, 3, 4, 5]))    
 print(sum_of_list("Any name", [3,4,2,4,23,4,9]))
+print(sum_of_list(1.2, [1,2,4,2,1])) # error: Argument 1 to "sum_of_list" has incompatible type "float"; expected "str"  [arg-type]
